@@ -1,0 +1,50 @@
+@media (max-width: 650px){
+    .titulo-secao {
+        font-size: 30px;
+    }
+
+    #cabecalho .container {
+    display: block;
+    padding: 10px;
+    }
+
+    #cabecalho #logo {
+        display: block;
+        margin: 0 auto;
+        width: 20px;
+    }
+
+    #cabecalho nav {
+        margin-top: 10px;
+        display: none;
+    }
+
+    #cabecalho nav li {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #668;
+    }
+
+    #versoes #modelos { 
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }
+
+    #fotos #galeria-fotos {
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }
+
+
+}
+
+@media(max-width: 380px){
+
+    #versoes #modelos {
+        display: block;
+    }
+
+    #fotos #galeria-fotos {
+        gap: 10px;
+    }
+}

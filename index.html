@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>iPhone - Apple</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído na aula da disciplina de Introdução à Web">
+    <meta name="keywords" content="apple, iphone, smartphone">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="shortcut icon" href="imagens/logo_apple_preto.png" type="image/x-icon">
+    
+  <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+  <link rel="stylesheet" href="plugins/magnific-popup.css">
+  <script src="plugins/jquery.min.js"></script>
+  <script src="plugins/jquery.bxslider.min.js"></script>
+  <script src="plugins/jquery.magnific-popup.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+          mode: 'horizontal',
+          captions: true,
+         // slideWidth : 800,
+          auto: true,
+          pager: true,
+         // speed: 100,
+          //controls: true,
+          
+      });
+      $('#galeria-fotos').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('');
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
+    });
+    
+  </script>
+
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <div class="container">
+            <img src="imagens/logo_apple_branco.png" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#versoes">Modelos</a></li>
+                    <li><a href="#fotos">Fotos</a></li>
+                    <li><a href="#video">Vídeo</a></li>
+                    <li><a href="https://www.apple.com/br/iphone/" target="_blank">Site oficial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banners">
+        <div class="container">
+            <ul class="slider">
+                <li><img src="imagens/banners/banner_01.jpg"></li>
+                <li><img src="imagens/banners/banner_02.jpg"></li>
+                <li><img src="imagens/banners/banner_03.jpg"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="versoes">
+        <div class="container">
+            <h2 class="titulo-secao">Qual é o iPhone ideal para você?</h2>
+            <div id="modelos">
+                <div>
+                    <img src="imagens/iphones/iphone_13_pro.jpg">
+                    <h3>iPhone 13 Pro</h3>
+                    <ul>
+                        <li>Tela OLED sem bordas com ProMotion de 6,7 pol. ou 6,1 pol. </li>
+                        <li>Sistema de câmera Pro. Teleobjetiva, grande-angular e ultra-angular</li>
+                        <li>Chip A15 Bionic</li>
+                    </ul>
+                    <a href="" class="but-comprar">Comprar</a>
+                    <a href="" class="but-saiba-mais">Saiba mais</a>
+                </div>
+                <div>
+                    <img src="imagens/iphones/iphone_13.jpg">
+                    <h3>iPhone 13</h3>
+                    <ul>
+                        <li>Tela OLED sem bordas de 6,1 pol. ou 5,4 pol.</li>
+                        <li>Sistema avançado de câmera dupla</li>
+                        <li>Chip A15 Bionic</li>
+                    </ul>
+                    <a href="" class="but-comprar">Comprar</a>
+                    <a href="" class="but-saiba-mais">Saiba mais</a>
+                </div>
+                <div>
+                    <img src="imagens/iphones/iphone_12.jpg">
+                    <h3>iPhone 12</h3>
+                    <ul>
+                        <li>Tela OLED sem bordas de 6,1 pol. ou 5,4 pol.</li>
+                        <li>Sistema de câmera dupla</li>
+                        <li>Chip A15 Bionic</li>
+                    </ul>
+                    <a href="" class="but-comprar">Comprar</a>
+                    <a href="" class="but-saiba-mais">Saiba mais</a>
+                </div>
+                <div>
+                    <img src="imagens/iphones/iphone_se.jpg">
+                    <h3>iPhone SE (3ª geração)</h3>
+                    <ul>
+                        <li>Tela LCD</li>
+                        <li>Sistema de câmera única</li>
+                        <li>Chip A15 Bionic</li>
+                    </ul>
+                    <a href="" class="but-comprar">Comprar</a>
+                    <a href="" class="but-saiba-mais">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fotos">
+        <div class="container">
+            <h2 class="titulo-secao">Surprenda com o poder da camêra de um iPhone</h2>
+            <div id="galeria-fotos">
+                <a href="imagens/fotos/fotosg/foto01.jpg" title="Foto 01"><img src="imagens/fotos/fotosp/foto01.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/foto02.jpg" title="Foto 02"><img src="imagens/fotos/fotosp/foto02.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/foto03.jpg" title="Foto 03"><img src="imagens/fotos/fotosp/foto03.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/foto04.jpg" title="Foto 04"><img src="imagens/fotos/fotosp/foto04.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/foto05.jpg" title="Foto 05"><img src="imagens/fotos/fotosp/foto05.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/foto06.jpg" title="Foto 06"><img src="imagens/fotos/fotosp/foto06.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/foto07.jpg" title="Foto 07"><img src="imagens/fotos/fotosp/foto07.jpg" alt=""></a>
+                <a href="imagens/fotos/fotosg/foto08.jpg" title="Foto 08"><img src="imagens/fotos/fotosp/foto08.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="video">
+        <div class="container">
+            <h2 class="titulo-secao">Apresentamos o iPhone 13</h2>
+            <iframe src="https://www.youtube.com/embed/m43rh-pI0P0"
+             title="YouTube video player"
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+               allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer id="rodape">
+        <p>Site construído na aula da disciplina de Introdução à Tecnologia à Tecnologia Web do 1º périodo do curso de Sistema de Informação do UniRios</p>
+        <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+    </footer>
+</body>
+
+</html>

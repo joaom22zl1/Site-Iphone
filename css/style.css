@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-1:rgb(8, 119, 247);
+    --color-2:black;
+    --color-3:rgba(255, 255, 255, 0.685);
+    --color-4:rgb(255, 255, 255);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#cabecalho {
+    background-color: var(--color-2);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #logo {
+    width: 30px;
+}
+
+#cabecalho nav li {
+    display: inline-block;
+}
+
+#cabecalho nav li a {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--color-3);
+    transition: all 0.7s linear;
+}
+
+#cabecalho nav li a:hover{
+    background-color: var(--color-1);
+    color: var(--color-4);
+}
+
+.titulo-secao {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#versoes {
+    padding: 50px 0;
+}
+
+#versoes #modelos {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap:50px;
+}
+
+#versoes #modelos img{
+    height: 250px;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    max-width: 150px;
+}
+
+#versoes #modelos .but-comprar {
+    text-decoration: none;
+    display:block;
+    background-color:var(--color-1);
+    padding: 10px 20px;
+    border-radius: 50px;
+    color:var(--color-4);
+    transition: all 0.5s linear;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 150px;
+}
+
+#versoes #modelos .but-comprar:hover {
+    box-shadow: 0px 0px 10px 3px rgba(38, 0, 255, 0.452)
+}
+
+#versoes #modelos .but-saiba-mais {
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+#versoes #modelos .but-saiba-mais:hover {
+    color: black;
+}
+
+#versoes #modelos .but-saiba-mais::after {
+    content: " \276f";
+}
+
+#versoes #modelos ul {
+   padding-left: 20px;
+}
+
+#versoes #modelos ul li {
+   margin-bottom: 10px;
+}
+
+#fotos {
+    background-color: rgb(226, 226, 226);
+    padding: 50px 0;
+}
+
+#fotos #galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 30px;
+}
+
+#fotos #galeria-fotos img {
+    display: block;
+    width: 100%;
+}
+
+#fotos #galeria-fotos img:hover{
+    transform: scale(1.4);
+    transition: all 0.5s ease;
+}
+
+#video {
+    background-color: var(--color-2);
+    padding: 50px 0;
+}
+
+#video .titulo-secao {
+    color: white;
+}
+
+#video iframe {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    aspect-ratio: 16 / 9;
+}
+
+#rodape {
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+    background-color:  rgba(136, 136, 136, 0.466);
+}
+
+#rodape p{
+    margin-bottom: 10px;
+}
+
+#rodape a {
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+   
+}
